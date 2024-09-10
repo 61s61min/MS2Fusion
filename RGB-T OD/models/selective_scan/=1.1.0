@@ -1,0 +1,5 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple, https://pypi.ngc.nvidia.com
+Collecting causal-conv1d
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7b/02/d2ff7b71358dadde5278b5a8c70b569124c64464a1f412469366fc639ac9/causal_conv1d-1.2.0.post2.tar.gz (7.1 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'error'
