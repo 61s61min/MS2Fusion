@@ -91,4 +91,4 @@ link: https://pan.baidu.com/s/1c9ClfwWBoe3o106_OBkyqQ?pwd=r0a5 (r0a5)
 Our RGB-T OD code is based on [ICAFusion](https://github.com/chanchanchan97/ICAFusion.git), RGB-T SS code is based on [MFNet](https://github.com/haqishen/MFNet-pytorch.git), and RGB-T SOD code is based on [MSEDNET](https://github.com/Zhou-wy/MSEDNet.git), SOD was evaluated with codes from [PySODMetrics](https://github.com/lartpang/PySODMetrics.git) and their contributions are greatly appreciated!
 We will update the code later
 ## Concat us
-If you have any other questions about the code, please email [Haibo Zhan](haibozhan@outlook.com).
+If you have any other questions about the code, please email [Haibo Zhan](<haibozhan@outlook.com>).
