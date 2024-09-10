@@ -53,34 +53,34 @@ You just need to check the path settings in the code to make it run. For more de
 
 <div align="center">
   <img src="OD results.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 1. Overview of our multispectral object detection framework </div>
+  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 2. Object detection results. </div>
 </div>    
 
 <div align="center">
   <img src="OD.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 1. Overview of our multispectral object detection framework </div>
+  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 3. Visualization of our object detection. </div>
 </div>  
 
 ### Semantic Segmentation
 
 <div align="center">
   <img src="SS results.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 1. Overview of our multispectral object detection framework </div>
+  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 4. Semantic Segmentation results. </div>
 </div>
 <div align="center">
   <img src="semantic segmentation.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 1. Overview of our multispectral object detection framework </div>
+  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 5. Visualization of our Semantic Segmentation. </div>
 </div>
 
 ### Salient Object Detection
 
 <div align="center">
   <img src="SOD results.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 1. Overview of our multispectral object detection framework </div>
+  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 6. Salient object detection results. </div>
 </div>
 <div align="center">
   <img src="SOD compare.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 1. Overview of our multispectral object detection framework </div>
+  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 7. Visualization of our salient object detection. </div>
 </div>
 
 
@@ -91,4 +91,4 @@ link: https://pan.baidu.com/s/1c9ClfwWBoe3o106_OBkyqQ?pwd=r0a5 (r0a5)
 Our RGB-T OD code is based on [ICAFusion](https://github.com/chanchanchan97/ICAFusion.git), RGB-T SS code is based on [MFNet](https://github.com/haqishen/MFNet-pytorch.git), and RGB-T SOD code is based on [MSEDNET](https://github.com/Zhou-wy/MSEDNet.git), SOD was evaluated with codes from [PySODMetrics](https://github.com/lartpang/PySODMetrics.git) and their contributions are greatly appreciated!
 We will update the code later
 ## Concat us
-If you have any other questions about the code, please email [Haibo Zhan](<haibozhan@outlook.com>).
+If you have any other questions about the code, please email <haibozhan@outlook.com>.
