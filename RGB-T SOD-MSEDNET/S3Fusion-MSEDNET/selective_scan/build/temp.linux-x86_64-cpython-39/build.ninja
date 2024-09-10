@@ -1,0 +1,37 @@
+ninja_required_version = 1.3
+cxx = c++
+nvcc = /usr/local/cuda-11.7/bin/nvcc
+
+cflags = -pthread -B /home/ubuntu/anaconda3/envs/sigma/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/anaconda3/envs/sigma/include -fPIC -O2 -isystem /home/ubuntu/anaconda3/envs/sigma/include -fPIC -I/home/shen2/zhb/Mamba_fusion/models/selective_scan/csrc/selective_scan -I/home/ubuntu/anaconda3/envs/sigma/lib/python3.9/site-packages/torch/include -I/home/ubuntu/anaconda3/envs/sigma/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/home/ubuntu/anaconda3/envs/sigma/lib/python3.9/site-packages/torch/include/TH -I/home/ubuntu/anaconda3/envs/sigma/lib/python3.9/site-packages/torch/include/THC -I/usr/local/cuda-11.7/include -I/home/ubuntu/anaconda3/envs/sigma/include/python3.9 -c
+post_cflags = -O3 -std=c++17 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=selective_scan_cuda_core -D_GLIBCXX_USE_CXX11_ABI=0
+cuda_cflags = -I/home/shen2/zhb/Mamba_fusion/models/selective_scan/csrc/selective_scan -I/home/ubuntu/anaconda3/envs/sigma/lib/python3.9/site-packages/torch/include -I/home/ubuntu/anaconda3/envs/sigma/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/home/ubuntu/anaconda3/envs/sigma/lib/python3.9/site-packages/torch/include/TH -I/home/ubuntu/anaconda3/envs/sigma/lib/python3.9/site-packages/torch/include/THC -I/usr/local/cuda-11.7/include -I/home/ubuntu/anaconda3/envs/sigma/include/python3.9 -c
+cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -O3 -std=c++17 -U__CUDA_NO_HALF_OPERATORS__ -U__CUDA_NO_HALF_CONVERSIONS__ -U__CUDA_NO_BFLOAT16_OPERATORS__ -U__CUDA_NO_BFLOAT16_CONVERSIONS__ -U__CUDA_NO_BFLOAT162_OPERATORS__ -U__CUDA_NO_BFLOAT162_CONVERSIONS__ --expt-relaxed-constexpr --expt-extended-lambda --use_fast_math --ptxas-options=-v -lineinfo -gencode arch=compute_70,code=sm_70 -gencode arch=compute_80,code=sm_80 --threads 4 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=selective_scan_cuda_core -D_GLIBCXX_USE_CXX11_ABI=0
+cuda_dlink_post_cflags = 
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+rule cuda_compile
+  depfile = $out.d
+  deps = gcc
+  command = $nvcc  $cuda_cflags -c $in -o $out $cuda_post_cflags
+
+
+
+
+
+build /home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan.o: compile /home/shen2/zhb/Mamba_fusion/models/selective_scan/csrc/selective_scan/selective_scan.cpp
+build /home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan_core.o: cuda_compile /home/shen2/zhb/Mamba_fusion/models/selective_scan/csrc/selective_scan/selective_scan_core.cu
+build /home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan_core_fwd2.o: cuda_compile /home/shen2/zhb/Mamba_fusion/models/selective_scan/csrc/selective_scan/selective_scan_core_fwd2.cu
+build /home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan_core_fwd3.o: cuda_compile /home/shen2/zhb/Mamba_fusion/models/selective_scan/csrc/selective_scan/selective_scan_core_fwd3.cu
+build /home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan_core_fwd4.o: cuda_compile /home/shen2/zhb/Mamba_fusion/models/selective_scan/csrc/selective_scan/selective_scan_core_fwd4.cu
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+# ninja log v5
+0	18491	1713961235359702764	/home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan.o	8de2e6cdced2ef3d
+1	21591	1713961238451677618	/home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan_core_fwd2.o	a0fcdd7bf19fac55
+1	29449	1713961246307613115	/home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan_core_fwd3.o	9f382d2f92f6e8be
+1	38555	1713961255407537306	/home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan_core_fwd4.o	965427665ece19ec
+1	58696	1713961275555365403	/home/shen2/zhb/Mamba_fusion/models/selective_scan/build/temp.linux-x86_64-cpython-39/csrc/selective_scan/selective_scan_core.o	9b836d2c1e7a10a2
