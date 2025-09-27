@@ -1,5 +1,4 @@
 # S3Fusion: Shared State Space based Feature Fusion for Multispectral Object Detection
-## abstract
 
 ### Overview
 <div align="center">
@@ -51,40 +50,6 @@ Link: https://pan.baidu.com/s/1ba4r5cgOnoatf-vcdwClgw?pwd=qpwq (qpwq)
 - **VT821, VT1000, VT5000**  
  Link:  https://pan.baidu.com/s/1G-ZAk0T67tDALeJHaX3aNQ?pwd=eqe4 (eqe4)
 
-## Results：
-### Object Detection
-
-<div align="center">
-  <img src="OD results.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 2. Object detection results. </div>
-</div>    
-
-<div align="center">
-  <img src="OD.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 3. Visualization of our object detection. </div>
-</div>  
-
-### Semantic Segmentation
-
-<div align="center">
-  <img src="SS results.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 4. Semantic Segmentation results. </div>
-</div>
-<div align="center">
-  <img src="semantic segmentation.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 5. Visualization of our Semantic Segmentation. </div>
-</div>
-
-### Salient Object Detection
-
-<div align="center">
-  <img src="SOD results.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 6. Salient object detection results. </div>
-</div>
-<div align="center">
-  <img src="SOD compare.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 7. Visualization of our salient object detection. </div>
-</div>
 
 
 ## SOD Salient Map
