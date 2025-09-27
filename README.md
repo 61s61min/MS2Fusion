@@ -2,7 +2,8 @@
 
 ## Abstract   
 Modern multispectral feature fusion for object detection faces two critical limitations: (1) Excessive preference for local complementary features over cross-modal shared semantics adversely affects generalization performance; and (2) The trade-off between the receptive field size and computational complexity present critical bottlenecks for scalable feature modeling. Addressing these issues, a novel Multispectral State-Space Feature Fusion framework, dubbed MS2Fusion, is proposed based on the state space model (SSM), achieving efficient and effective fusion through a dual-path parametric interaction mechanism. More specifically, the first cross-parameter interaction branch inherits the advantage of cross-attention in mining complementary information with cross-modal hidden state decoding in SSM. The second shared-parameter branch explores cross-modal alignment with joint embedding to obtain cross-modal similar semantic features and structures through parameter sharing in SSM. Finally, these two paths are jointly optimized with SSM for fusing multispectral features in a unified framework, allowing our MS2Fusion to enjoy both functional complementarity and shared semantic space. In our extensive experiments on mainstream benchmarks including FLIR, M3FD and LLVIP, our MS2Fusion significantly outperforms other state-of-the-art multispectral object detection methods, evidencing its superiority. Moreover, MS2Fusion is general and applicable to other multispectral perception tasks. We show that, even without specific design, MS2Fusion achieves state-of-the-art results on RGB-T semantic segmentation and RGBT salient object detection, showing its generality.    
-Paper download in [here](https://arxiv.org/abs/2507.14643)
+
+Paper download in [MS2Fusion](https://arxiv.org/abs/2507.14643)
 
 ### Overview
 <div align="center">
