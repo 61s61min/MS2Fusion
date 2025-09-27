@@ -59,3 +59,11 @@ We will update the code later
 
 ## Concat us
 If you have any other questions about the code, please email **[Haibo Zhan](mailto:haibozhan@outlook.com)**.
+
+## Cite us
+@article{shen2025multispectral,     
+  title={Multispectral state-space feature fusion: Bridging shared and cross-parametric interactions for object detection},     
+  author={Shen, Jifeng and Zhan, Haibo and Dong, Shaohua and Zuo, Xin and Yang, Wankou and Ling, Haibin},      
+  journal={arXiv preprint arXiv:2507.14643},        
+  year={2025}   
+}
