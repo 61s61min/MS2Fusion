@@ -1,10 +1,8 @@
-# S3Fusion: Shared State Space based Feature Fusion for Multispectral Object Detection
+# Multispectral State-Space Feature Fusion: Bridging Shared and Cross-Parametric Interactions for Object Detection
 
-### Overview
-<div align="center">
-  <img src="overrall detail.png" width="600px">
-  <div style="color:orange; border-bottom: 10px solid #d9d9d9; display: inline-block; color: #999; padding: 10px;"> Fig 1. Overview of our multispectral object detection framework </div>
-</div>
+## Acknowledgement  
+This is our preliminary code. We will provide a refined, clear, and detailed version after the paper is published. Please contact us if you have any questions.
+
 
 ## Installation
 ```
@@ -58,5 +56,6 @@ Link: https://pan.baidu.com/s/1c9ClfwWBoe3o106_OBkyqQ?pwd=r0a5 (r0a5)
 ## Thanks
 Our RGB-T OD code is based on **[ICAFusion](https://github.com/chanchanchan97/ICAFusion.git)**, RGB-T SS code is based on **[MFNet](https://github.com/haqishen/MFNet-pytorch.git)**, and RGB-T SOD code is based on **[MSEDNET](https://github.com/Zhou-wy/MSEDNet.git)**, SOD was evaluated with codes from **[PySODMetrics](https://github.com/lartpang/PySODMetrics.git)** and their contributions are greatly appreciated!
 We will update the code later
+
 ## Concat us
 If you have any other questions about the code, please email **[Haibo Zhan](mailto:haibozhan@outlook.com)**.
