@@ -76,7 +76,9 @@ If you have any other questions about the code, please email **[Haibo Zhan](mail
 @article{shen2025multispectral,    
   title={Multispectral state-space feature fusion: Bridging shared and cross-parametric interactions for object detection},    
   author={Shen, Jifeng and Zhan, Haibo and Dong, Shaohua and Zuo, Xin and Yang, Wankou and Ling, Haibin},    
-  journal={Information Fusion},    
+  journal={Information Fusion},      
+  volume = {127},    
+  part = {C},    
   pages={103895},    
   year={2025},   
   publisher={Elsevier}    
