@@ -29,6 +29,68 @@ Please refer to **[VMamba](https://github.com/MzeroMiko/VMamba.git)**.
 
 - You just need to check the path settings in the code to make it run. For more details, please refer to the following **[repository](#thanks)**.
 
+
+### 1. Object Detection
+
+* **M4-SAR (YOLOv11 OBB)**
+
+| Method | bridge | harbor | oil_tank | playground | airport | wind_turbine | mAP@50 | mAP |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **MS2Fusion** | 76.3 | 93.2 | 66.0 | 92.0 | 88.9 | 97.8 | 85.7 | 61.6 |
+
+* **FLIR-align**
+
+| Detector | mAP@50 | mAP | Person | Car | Bicycle |
+| --- | --- | --- | --- | --- | --- |
+| **YOLOv5** | 83.3 | 40.3 | 85.1 | 89.8 | 74.9 |
+| **Co-DETR** | 87.8 | 49.7 | 90.2 | 93.4 | 79.6 |
+
+* **LLVIP**
+
+| Detector | mAP@50 | mAP |
+| --- | --- | --- |
+| **YOLOv5** | 97.5 | 65.5 |
+| **Co-DETR** | 98.4 | 70.6 |
+
+* **M³FD**
+
+| Detector | mAP@50 | mAP | People | Bus | Car | Motorcycle | Lamp | Truck |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **YOLOv5** | 89.4 | 59.7 | 85.6 | 93.7 | 93.9 | 82.4 | 90.8 | 89.9 |
+| **Co-DETR** | 91.4 | 65.6 | 89.8 | 95.0 | 94.7 | 88.2 | 88.3 | 92.4 |
+
+* **VEDAI**
+
+| Detector | mAP@50 | Car | Truck | Pickup | Tractor | Camper | Ship | Van | Plane |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **YOLOv5** | 80.2 | 89.5 | 75.6 | 84.2 | 81.6 | 75.9 | 61.8 | 76.4 | 97.0 |
+| **Co-DETR** | 84.2 | 93.3 | 78.9 | 88.5 | 85.8 | 80.6 | 65.5 | 83.6 | 97.1 |
+
+---
+
+### 2. Semantic Segmentation
+
+* **MFNet & SemanticRT**
+
+| Dataset | mIoU |
+| --- | --- |
+| **MFNet** | 66.3 |
+| **SemanticRT** | 78.8 |
+
+---
+
+### 3. RGB-T Salient Object Detection
+
+* **VT821, VT1000 & VT5000**
+
+
+| Dataset | $S_{\alpha}$ (S-measure) | adpE (E-measure) | adpF (F-measure) | MAE |
+| --- | --- | --- | --- | --- |
+| **VT821** | 90.4 | 93.5 | 86.3 | 3.9 |
+| **VT1000** | 94.4 | 97.2 | 91.8 | 1.6 |
+| **VT5000** | 90.2 | 94.2 | 86.4 | 3.0 |
+
+
 ## Dataset
 - **FLIR**  
  Link:  https://pan.baidu.com/s/19TbR2PDTE3a-b6aG-wzYdA?pwd=q4gb (q4gb)    
